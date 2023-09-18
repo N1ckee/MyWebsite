@@ -7,9 +7,10 @@
 }
 
 html {
-    background-image: url("SpaceBackground.png");
-    background-attachment: fixed;
-    background-color: rgb(34, 34, 34);
+    background-color: #090909;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 25%, #090909 20%, #090909 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #090909 20%, #090909 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#f5455c 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #f5455c 2px, #090909 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 header {
@@ -99,6 +100,10 @@ header {
     border-radius: 10px;
 }
 
+.text-left {
+    text-align: left;
+}
+
 h1 {
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
@@ -135,6 +140,13 @@ p {
     border-radius:  5px;
 }
 
+.project-background {
+    background-color: #090909;
+opacity: 1;
+background-image: radial-gradient(#f5455c 1.4000000000000001px, #090909 1.4000000000000001px);
+background-size: 28px 28px;
+}
+
 .freecodecamp {
     background-image: url("FreeCodeCampBackground.png");
 }
@@ -161,6 +173,7 @@ p {
     color: white;
     list-style-type: none;
     align-items: center;
+    line-height: 1.5;
     font-size: 20px;
     width: 200px;
 }
