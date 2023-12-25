@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+:root {
+    --text: #edf0f1;
+    --background: #24252a;
+    --primary: #AA2020;
+    --hover: rgba(170, 32,32, 0.8);
+    --secondary: #0c0d13;
+    --accent: #6ea6a6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+}
+
+li, a, button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10% ;
+    text-decoration: none;
+    border: 10px var(--primary);
+    border-style: none none double none;
+}
+
+.logo {
+    padding: 0px 20px;
+    cursor: pointer;
+    width: 150px;
+    margin-right: auto;
+    order: 3;
+    margin-left: auto;
+}
+
+.header_links {
+    list-style: none;
+}
+
+.header_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header_links li {
+    transition: all 0.3s ease 0s;
+}
+
+.header_links li a:hover {
+    color: var(--primary);
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: var(--hover);
+}
+
+.background-fade-top {
+    background: linear-gradient(var(--secondary),var(--background));
+    padding: 10px;
+}
+
+.background-fade-bottom {
+    background: linear-gradient(var(--background), var(--secondary));
+    padding: 10px;
+}
+
+.intro_box {
+    border-top: 10px solid var(--secondary);
+    border-bottom: 20px solid var(--secondary);
+    margin: auto;
+    width: 100%;
+    background-color: #19191d;
+    padding: 125px 0px;
+    background-color: #24252a;
+opacity: 1;
+background: radial-gradient(circle, transparent 20%, #24252a 20%, #24252a 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #24252a 20%, #24252a 80%, transparent 80%, transparent) 35px 35px, linear-gradient(rgba(170,32,32,1) 2.8000000000000003px, transparent 2.8000000000000003px) 0 -1.4000000000000001px, linear-gradient(90deg, rgba(170,32,32,1) 2.8000000000000003px, #24252a 2.8000000000000003px) -1.4000000000000001px 0;
+background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
+}
+
+h1 {
+    margin: auto auto;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #edf0f1;
+
+}
+
+.box_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 500;
+    margin: 10px 2%;
+    padding: 30px 10% ;
+    color: #edf0f1;
+    font-family: 'Raleway', sans-serif;
+    border: 2px solid rgba(170, 32,32, 1);;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);;
+}
+
+.box_text a {
+    font-style: italic;
+    line-height: 4em;
+}
+
+.box_text a:hover {
+    color: rgb(170, 32, 32);
+}
+
+.section_pad {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 30px 3px ;
+}
+
+.blue {
+    border-color: var(--accent);
+}
+
+.projects_links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--secondary);
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.projects_links div {
+    transition: all 0.3s ease 0s;
+}
+
+.projects_links div a:hover {
+    color: rgb(170, 32, 32);
+}
+
+.temp {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    border: 7px double var(--accent);
+    background-color: #19191d;
+}
+
+.projects_title a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 500;
+    margin: 10px 2%;
+    padding: 30px 10% ;
+    color: #edf0f1;
+    font-size: large;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent);;
+    border-radius: 7px;
+    background-color: var(--secondary);
+    text-shadow: 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.projects_info {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin: 10px 2%;
+    padding: 30px 10% ;
+    gap: 10px;
+    color: #edf0f1;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    list-style-type: none;
+    border-radius: 7px;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.projects_wip {
+    color: #9b0f34;
+}
+
+.projects_wi:hover span {
+    display: none;
+}
+
+.projects_wip:hover::before {
+    content: "Curently working on: " ;
+}
+
+footer {
+    border-top: 5px double var(--text);
+    background-color: var(--secondary);
+    overflow: auto;
+}
+
